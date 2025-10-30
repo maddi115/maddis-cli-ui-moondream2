@@ -210,3 +210,30 @@ Created by [@maddi115](https://github.com/maddi115)
 ---
 
 **Enjoy analyzing images in your terminal!** 🎨👁️✨
+
+## 🎯 Quick Install Test
+
+After installation, test it worked:
+```bash
+source ~/.bashrc
+moondream
+```
+
+You should see the Moondream2 model loading and then the beautiful image browser!
+
+## 📦 What Gets Installed?
+
+- **Location:** `~/maddis-cli-ui-moondream2/`
+- **Size:** ~4GB (including model cache)
+- **Command:** `moondream` (added to your PATH)
+- **Virtual Environment:** Isolated Python environment
+- **Dependencies:** PyTorch, Transformers, Pillow, ImageMagick
+
+## 🗑️ Uninstall
+
+To remove everything:
+```bash
+rm -rf ~/maddis-cli-ui-moondream2
+rm ~/moondream
+sed -i '/export PATH="\$HOME:\$PATH"/d' ~/.bashrc
+```
